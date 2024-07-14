@@ -7,50 +7,22 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <div class="wrap">
+      <div class="d-flex">
+        <div class="me-20">
+          <img class="d-block w-100 mb-4" src="https://fakeimg.pl/96/" alt="fake-img-px">
+          <img class="d-block" src="https://fakeimg.pl/96/" alt="fake-img-px">
         </div>
+        <div class="max_w_288 me-20">
+          <h2 class="line_h_2 fs-5 mb-0">Title Lorem</h2>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugit, repellat, commodi culpa</p>
+          <h2 class="line_h_2 fs-5 mb-0">Title Lorem</h2>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugit, repellat, commodi culpa consequuntur, sit velit reiciendis..</p>
+        </div>
+        <img class="ad_img" src="https://fakeimg.pl/216/" alt="fake-img-px">
       </div>
+      <p class="py_48 mb-0 text-center">表尾文字</p>
     </div>
-
-    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>
